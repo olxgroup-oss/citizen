@@ -21,16 +21,16 @@ require('dotenv-flow').config({
 // uncomment after placing your favicon in /public
 if (process.env.NODE_ENV === 'production') {
   const format = json({
-    timestamp: ':date[web]',
+    timestamp: ':date[iso]',
     method: ':method',
     url: ':url',
     status: ':status',
     length: ':res[content-length]',
     'response-time': ':response-time ms',
   });
-  app.use(morgan(format, { skip(req, res) { return req.path === '/health' || req.path === '/favicon.ico' || req.path === '/.well-known/terraform.json'; } }));
+  app.use(morgan(format, { skip(req) { return ['/health', '/favicon.ico', '/.well-known/terraform.json'].includes(req.path); } }));
 } else {
-  app.use(morgan(':date[web] :method :url :status'));
+  app.use(morgan(':date[clf] :method :url :status'));
 }
 
 app.use(bodyParser.json());
