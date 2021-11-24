@@ -50,6 +50,10 @@ Environment variables:
 
 The project supports link:https://www.npmjs.com/package/dotenv-flow[dotenv-flow] and will load a `.env.test` file with the configs.
 
+New Relic has been added to the project.
+* `NEW_RELIC_LICENSE_KEY`: Required to publish APM to New RElic. Format is a '40HexadecimalCharacters' string.
+* `NEW_RELIC_APP_NAME`: Unique application name for your New Relic sub-account.
+
 More details about dotenv-flow can be found at the project link:https://github.com/kerimdzhanov/dotenv-flow#files-under-version-control[homepage].
 
 == Client Usage
