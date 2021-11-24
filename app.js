@@ -1,3 +1,4 @@
+const newrelic = process.env.NEW_RELIC_APP_NAME && process.env.NEW_RELIC_LICENSE_KEY ? require("newrelic") : null;
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
