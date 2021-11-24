@@ -14,7 +14,7 @@
     "test": "npm run test:unit && npm run test:integration",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
-    "build": "pkg . --out-path dist --targets node16-linux-Ax64,node16-macos-x64,node16-win-x64",
+    "build": "pkg . --out-path dist --targets node16-linux-x64,node16-macos-x64,node16-win-x64",
     "pre-commit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [ "pre-commit-msg", "lint" ],
