@@ -1,3 +1,20 @@
+# [0.6.0](https://github.com/olxgroup-oss/citizen/compare/v0.5.0...v0.6.0) (2021-11-24)
+
+
+### Bug Fixes
+
+* **build:** allow the correct version to be displayed ([082a30a](https://github.com/olxgroup-oss/citizen/commit/082a30ac66cd4c16fdbbf616139a52f34a474273))
+* **ci:** remove typo in build ([f33eb13](https://github.com/olxgroup-oss/citizen/commit/f33eb134a534842a475ac5edfa3713e64dddc6b9))
+* **logging:** change the json logger format ([9871542](https://github.com/olxgroup-oss/citizen/commit/987154294f780a3038fcf3d6e126642f29905536))
+* **logging:** change to iso output ([a84260c](https://github.com/olxgroup-oss/citizen/commit/a84260cb7aa3e59f8351c4f4620b5fb35c9b1b58))
+* **provider:** fix saving download counts ([7f706b0](https://github.com/olxgroup-oss/citizen/commit/7f706b0106a539ae6eecb900123e6f8b8a9154b7))
+
+
+### Features
+
+* **logging:** use a json logger for ELK ([7fd9fd1](https://github.com/olxgroup-oss/citizen/commit/7fd9fd13bfb130f8361c993b558b7c75b8cfad0a))
+* **monitoring:** add new relic apm monitoring ([b863f76](https://github.com/olxgroup-oss/citizen/commit/b863f761c44d59f20f73365a90b483461c67e271))
+
 # [0.5.0](https://github.com/olxgroup-oss/citizen/compare/v0.4.4...v0.5.0) (2021-11-22)
 
 
