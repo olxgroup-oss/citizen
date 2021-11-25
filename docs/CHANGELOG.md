@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/olxgroup-oss/citizen/compare/v0.6.0...v0.6.1) (2021-11-25)
+
+
+### Bug Fixes
+
+* **ci:** semantic release should update the package lock version ([2964678](https://github.com/olxgroup-oss/citizen/commit/29646788556632387d8324eab476c4f72e36ad86))
+* **docker:** CMD must be a list ([7470bfe](https://github.com/olxgroup-oss/citizen/commit/7470bfe7c4d0a2dc7cef9d61b7f77d566d84bf2f))
+* **server:** add signal handler ([1ed7135](https://github.com/olxgroup-oss/citizen/commit/1ed7135b82399dae5d592130bba1f16e566c8f8d))
+
 # [0.6.0](https://github.com/olxgroup-oss/citizen/compare/v0.5.0...v0.6.0) (2021-11-24)
 
 
