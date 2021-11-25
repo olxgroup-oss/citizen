@@ -10,3 +10,4 @@ data/
 test/terraform-binaries/
 test/integration/fixture/.terraform/
 .secrets
+newrelic_agent.log
