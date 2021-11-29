@@ -67,15 +67,13 @@ module.exports = {
       Bucket: S3_BUCKET,
       Key: `modules/${path}`,
     };
-    const chunks = [];
-    const file = await s3.send(new GetObjectCommand(params));
-    const content = await new Promise((resolve, reject) => {
-      file.Body.on('data', (chunk) => chunks.push(chunk));
-      file.Body.on('error', reject);
-      file.Body.on('end', () => resolve(chunks));
-    });
-
-    return content[0];
+    try {
+      const content = await s3.send(new GetObjectCommand(params));
+      return stream2buffer(content.Body);
+    } catch (err) {
+      debug(err);
+      return null;
+    }
   },
   saveProvider: async (path, tarball) => {
     debug(`save the provider into ${path}.`);
