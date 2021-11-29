@@ -1,3 +1,10 @@
+## [0.6.2](https://github.com/olxgroup-oss/citizen/compare/v0.6.1...v0.6.2) (2021-11-29)
+
+
+### Bug Fixes
+
+* **module:** download big module seems not to work ([319e8d3](https://github.com/olxgroup-oss/citizen/commit/319e8d300f5469206b3440ffe2f70c584fa3283b))
+
 ## [0.6.1](https://github.com/olxgroup-oss/citizen/compare/v0.6.0...v0.6.1) (2021-11-25)
 
 
