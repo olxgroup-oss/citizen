@@ -19,6 +19,7 @@ jobs:
         node:
           - 16
           - 17
+          - 18
     services:
       mongodb:
         image: mongo
